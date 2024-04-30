@@ -16,7 +16,8 @@ filenames = askopenfilenames(initialdir=os.getcwd())
 
 # Convert the tuple to a list.
 filenames = list(filenames)
-print(filenames)
+
+# Open each files and save it as WebP
 for item in filenames:
      im = Image.open(item)
      item = item.rstrip(".png")
